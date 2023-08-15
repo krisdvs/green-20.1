@@ -81,8 +81,8 @@ steps:
 #       - ${SHORT_SHA}_test_log.xml
 # [END cloudbuild_go_logs_yaml]
 # Store images in Google Artifact Registry
-images:
-  - us-central1-docker.pkg.dev/$PROJECT_ID/krishna-repo/myimage:$SHORT_SHA
+# images:
+#   - us-central1-docker.pkg.dev/$PROJECT_ID/krishna-repo/myimage:$SHORT_SHA
 # [END cloudbuild_go_yaml]
 
 
