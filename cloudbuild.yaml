@@ -67,7 +67,7 @@ steps:
   # [START cloudbuild_go_deploy_yaml]
   # Deploy to Cloud Run
   - name: 'gcr.io/cloud-builders/gcloud'
-    args: ['run', 'deploy', 'helloworld-${SHORT_SHA}', 
+    args: ['run', 'deploy', 'cloud-trig-${SHORT_SHA}', 
            '--image=us-central1-docker.pkg.dev/$PROJECT_ID/krishna-repo/myimage:$SHORT_SHA', 
            '--region', 'us-central1', '--platform', 'managed']
   # [END cloudbuild_go_deploy_yaml]
